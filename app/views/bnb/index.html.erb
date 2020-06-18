@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>airbnb html copy</title>
+        <link rel="icon" href="airbnb_logo.png">
+        <meta name="description" content="practice-2">
+        <%# <link rel="stylesheet" href="index.css"> %>
+        <%= stylesheet_link_tag "index.css", :media => "all" %>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+    </head>
+    
+    <body>
+        
+<!-- ボディ -->
+        <div class="main">
+<!-- ロゴ付きナビゲーション -->
+            <div class="nav">
+                <img src="img/H_airbnb_logo.png" alt="ロゴ" class="nav-left">
+                <div class="nav-right">
+                    <div class="nav-menu-group">
+                        <span class="nav-menu">
+                            <span>
+                                <svg viewBox="0 0 12 12" width="0.8571428571428571em" height="0.8571428571428571em">
+                                    <path d="M3.48 3.5c.17-.85.43-1.6.75-2.18A5.02 5.02 0 001.67 3.5zm1.03 0h2.98C7.16 2 6.57 1 6 1S4.84 2 4.5 3.5zm4 0h1.82a5.02 5.02 0 00-2.56-2.18c.32.58.58 1.33.75 2.18zm.16 1a13.82 13.82 0 010 3h2.1a5 5 0 000-3zm-1.01 0H4.34a12.43 12.43 0 000 3h3.32a12.43 12.43 0 000-3zm-4.33 0h-2.1a5 5 0 000 3h2.1a13.82 13.82 0 010-3zm5.19 4a7.5 7.5 0 01-.75 2.18 5.02 5.02 0 002.56-2.18zm-1.03 0H4.51C4.84 10 5.43 11 6 11s1.16-1 1.5-2.5zm-4 0H1.66c.57 1 1.48 1.77 2.56 2.18a7.5 7.5 0 01-.75-2.18zM6 12A6 6 0 116 0a6 6 0 010 12z" fill="currentcolor">
+                                </svg>
+                            </span>
+                            <span>日本語(JP)</span>
+                        </span>
+                        <span class="nav-menu">¥ JPY</span>
+                        <span class="nav-menu">お部屋を掲載</span>
+                        <span class="nav-menu">体験をホストする</span>
+                        <span class="nav-menu">ヘルプ</span>
+                        <span class="nav-menu">登録する</span>
+                        <span class="nav-menu">ログイン</span>
+                    </div>
+                </div>             
+            </div>
+            
+            <!-- 検索窓 -->
+            <section class="search">
+                <div class="search-console">
+                    <div class="search-console-menu">
+                        <h1>ユニークな宿泊先や体験を予約しよう。</h1>
+                        <div class="menu-area menu-contens">
+                            <h4>エリア</h4>
+                            <input type="text" name="text" value="" size="20" placeholder="どこでも">
+                        </div>
+                        <div class="menu-when-pearent menu-contens">
+                            <span class="menu-when menu-contens">
+                                <h4>チェックイン</h4> 
+                                <input type="date" name="date" value="" size="20" placeholder="yyyy/mm/dd">
+                            </span>
+                            <span class="menu-when menu-contens">
+                                <h4>チェックアウト</h4>  
+                                <input type="date" name="date" value="" size="20" placeholder="yyyy/mm/dd">
+                            </span>
+                        </div>
+                        <!-- <div class="menu-voygers menu-contens">
+                            <h4>ゲスト</h4>  
+                            <input type="text" name="text" value="" size="20" placeholder="人数">
+                        </div> -->
+                        <div class="menu-search menu-contens">
+                            <input type="button" name="text" value="探す" size="20" class="menu-search-button">
+                        </div>
+                    </div>                   
+                </div>              
+            </section>
+        </div>
+        <div class="main-low">
+            <div class="line">
+                <h2>Tasubnbで探す</h2>
+                <div class="contents">
+                    <div class="action"><img src="img/tatsumi.png" class="action-pict"><h3>宿泊</h3></div>
+                    <div class="action"><img src="https://pbs.twimg.com/media/Dinzm7bV4AAIGn4.jpg" class="action-pict"><h3>アドベンチャー</h3></div>
+                    <div class="action"><img src="https://www.smashbros.com/assets_v2/img/sns/jp.png?180613" class="action-pict"><h3>乱闘</h3></div>
+                </div>
+            </div>
+            <div class="line">
+                <h2></h2>
+                <div class="contents">
+                    <h1 class="ad-1">TasubnbでTポイントを貯めよう</h1>
+                    <h4 class="ad-2">Tポイント利用手続きをしてて、新しい旅行をもっとおトクに</h4>
+                    <div class="ad-3"><input type="button" name="text" value="詳細をチェック" size="20" class="ad-button"></div>
+                </div>
+                <div class="contents"><img class="line-img1"></div>
+
+            </div>
+            <div class="line">
+                <h2>Tatubnb Premiumの宿泊先</h2>
+                <p class="sub-title">うるささと騒々しさが認められた激選の一軒</p>
+            </div>
+            <div class="contents"><img class="line-img2"></div>
+            <div class="line">
+                <h2>辰巳で高評価の体験</h2>
+                <div class="contents" style="grid-template-columns: repeat(5, 10vw);">
+                    <div class="famous"><img class="famous-pict" src="https://www.nintendo.co.jp/hardware/switch/feature/img/02-gallery/img-06.jpg"></div>
+                    <div class="famous"><img class="famous-pict" src="https://images-na.ssl-images-amazon.com/images/I/51o9mKgmE4L._SX349_BO1,204,203,200_.jpg"></div>
+                    <div class="famous"><img class="famous-pict" src="https://www.jalan.net/jalan/img/6/spot/0286/KXL/foomoojH000286378_1.jpg"></div>
+                    <div class="famous"><img class="famous-pict" src="img/pic2.png"></div>
+                    <div class="famous"><img class="famous-pict" src="img/pic1.png"></div>
+                </div>
+                <div class="contents" style="grid-template-columns: repeat(5, 10vw);">
+                    <div class="famous-sentence">
+                        <h4>辰巳</h4>
+                        <p class="description">大乱闘スマッシュブラザーズ</p>
+                        <p class="description">1人¥0から</p>
+                        <p class="description">★5.00<span style="color: #717171;">(2156)</span></p>
+                    </div>
+                    <div class="famous-sentence">
+                        <h4>辰巳</h4>
+                        <p class="description">新卒必見！Webテスト＆ES添削</p>
+                        <p class="description">1人¥0から</p>
+                        <p class="description">★4.89<span style="color: #717171;">(501)</span></p>
+                    </div>
+                    <div class="famous-sentence">
+                        <h4>辰巳</h4>
+                        <p class="description">焼肉。寿司。ピザ。豪華な夜食</p>
+                        <p class="description">1人¥0から</p>
+                        <p class="description">★4.78<span style="color: #717171;">(2156)</span></p>
+                    </div>
+                    <div class="famous-sentence">
+                        <h4>辰巳</h4>
+                        <p class="description">映画上映会（※ホラーが5割りです。）</p>
+                        <p class="description">1人¥0から</p>
+                        <p class="description">★4.50<span style="color: #717171;">(501)</span></p>
+                    </div>
+                    <div class="famous-sentence">
+                        <h4>辰巳</h4>
+                        <p class="description">Yogibooによる高品質な寝具</p>
+                        <p class="description">1人¥0から</p>
+                        <p class="description">★0.01<span style="color: #717171;">(56)</span></p>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!-- 中間 -->
+        <div style="height: 10vw;"></div>
+        
+        <!-- フッター -->
+        <div class="footer">
+            <div class="contents" style="grid-template-columns: repeat(4, 10vw);">
+                <div class="footer-sentence">
+                    <h4>企業情報</h4>
+                    <p class="description footer-font">ダイバーシティ＆ビロンギング</p>
+                    <p class="description footer-font">アクセシビリティ対応</p>
+                    <p class="description footer-font">信頼＆安全</p>
+                    <p class="description footer-font">Tasubnb Citizen</p>
+                    <p class="description footer-font">ニュース</p>
+                </div>   
+                <div class="footer-sentence">
+                    <h4>コミュニティ</h4>
+                    <p class="description footer-font">Tasubnbマガジン</p>
+                    <p class="description footer-font">Tasubnbビジネスプログラム</p>
+                    <p class="description footer-font">お友達を招待</p>
+                    <p class="description footer-font">採用情報</p>
+                </div>   
+                <div class="footer-sentence">
+                    <h4>ホスト</h4>
+                    <p class="description footer-font">お部屋を掲載</p>
+                    <p class="description footer-font">体験をホストする</p>
+                </div>   
+                <div class="footer-sentence">
+                    <h4>サポート</h4>
+                    <p class="description footer-font">ヘルプセンター</p>
+                    <p class="description footer-font">エリアサポート</p>
+                </div>   
+            </div>
+            <!-- 権利関係 -->
+            <div class="right">
+                <div class="footer-sentence footer-right">
+                    <p class="description footer-font">Tasubnb Global Services Limited</p>
+                    <p class="description footer-font">観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日)</p>
+                    <p class="description footer-font">© 2020 Airbnb, Inc. All rights reserved</p>
+                </div>                       
+                <div class="footer-sentence">
+                    <div class="footer-font">
+                        <span class="nav-menu custom-footer-ver">
+                            <span>
+                                <svg viewBox="0 0 12 12" width="0.8571428571428571em" height="0.8571428571428571em">
+                                    <path d="M3.48 3.5c.17-.85.43-1.6.75-2.18A5.02 5.02 0 001.67 3.5zm1.03 0h2.98C7.16 2 6.57 1 6 1S4.84 2 4.5 3.5zm4 0h1.82a5.02 5.02 0 00-2.56-2.18c.32.58.58 1.33.75 2.18zm.16 1a13.82 13.82 0 010 3h2.1a5 5 0 000-3zm-1.01 0H4.34a12.43 12.43 0 000 3h3.32a12.43 12.43 0 000-3zm-4.33 0h-2.1a5 5 0 000 3h2.1a13.82 13.82 0 010-3zm5.19 4a7.5 7.5 0 01-.75 2.18 5.02 5.02 0 002.56-2.18zm-1.03 0H4.51C4.84 10 5.43 11 6 11s1.16-1 1.5-2.5zm-4 0H1.66c.57 1 1.48 1.77 2.56 2.18a7.5 7.5 0 01-.75-2.18zM6 12A6 6 0 116 0a6 6 0 010 12z" fill="currentcolor">
+                                </svg>
+                            </span>
+                            <span>日本語(JP)</span>
+                        </span>
+                        <span class="nav-menu custom-footer-ver">¥ JPY</span>
+
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

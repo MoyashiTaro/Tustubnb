@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    /* background-color: #000; */
+    overflow-x: hidden;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+h1{font-size: 30px;
+   color:rgb(72, 72, 72);}
+
+h2{font-weight: 600 !important;
+    margin-bottom: 0px !important;
+    font-size: 22px !important;
+    line-height: 33px !important;
+    padding: 16px 0px;
+    padding-left: 5.2vw;
+}
+
+h3{
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: rgb(34, 34, 34);
+    padding-left: 24px !important;
+    line-height: 5em;
+}
+
+h4{font-size: 12px !important;
+    font-weight: 800 !important;
+    color:rgb(48, 48, 48);}
+
+.sub-title{
+    font-size: 16px !important;
+    padding-left: 5.2vw;
+    position: absolute;
+    top: 3vw;
+    color: #444;      
+}   
+.description{
+    font-size: 14px !important;
+    color: #222;
+    margin-top: 3px;    
+}   
+
+
+/* 最初の表示部分 */
+.main{
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh !important;
+    position: relative !important;
+}
+
+/* Header部分 */
+.nav{
+    width: 100%;
+    height: 81px !important;
+    position: absolute !important;
+    display: table;
+}
+
+.nav-left{
+    width: 44px;
+    height: 34px;
+    display: table-cell;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.nav-right{
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.nav-menu{
+    padding:0px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav-menu-group{
+    text-align: right;
+    display: inline;
+
+}
+
+/* 検索窓 */
+.search{
+    height: 100vh !important;
+    min-height: 650px !important;
+    max-height: 1500px !important;
+    background: url(https://a0.muscache.com/4ea/air/r:w3100-h2074-sfit,e:fjpg-c80/pictures/0ffd8594-f123-43f0-85bb-7ef88c6f0624.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -85px;
+}
+
+.search-console{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 125px;
+}
+
+.search-console-menu{
+    margin: 0px 80px;
+    width: 379px !important;
+    background: #fff;
+    border-radius: 4px;
+    padding: 32px;
+    padding-bottom: 24px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important;
+}
+
+/* 検索要素 */
+.menu-contens{
+    letter-spacing: 0.2em;
+}
+/* 場所 */
+.menu-area{}
+
+/* 期間入力 */
+.menu-when{}
+.menu-when-pearent{
+    display: inline-flex;
+}
+
+/* 人数 */
+.menu-voygers{}
+
+/* 検索ボタン */
+.menu-search{
+    text-align: right;
+}
+.menu-search-button{
+    background-color: #FF5A5F;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+}
+/* お腹部分 */
+
+.line{
+    margin: 3vh 0;
+    position: relative;
+}
+
+.contents{
+    display: inline-flex;
+    padding: 0vh 5.2vw;}
+/* １段目 */
+.action{
+    width: 28.5vw;
+    text-align: center;
+    display: inline-flex;
+    border: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #cccccc;
+    margin: 0px 10px;
+}
+.action-pict{
+    width: 126px;
+    height: 84px;
+}
+/* ２段目 */
+
+.ad-1{
+    position: absolute;
+    top: 8vw;
+    width: 380px;
+    left: 150px;
+}
+.ad-2{
+    position: absolute;
+    top: 14vw;
+    width: 450px;
+    left: 150px;
+    font-size: 24px !important;
+    font-weight: 200 !important;
+    color: #707070;
+}
+
+.ad-3{
+    position: absolute;
+    top: 20vw;
+    left: 150px;
+}
+
+.ad-button{
+    background-color: rgb(0, 132, 137) !important;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+
+.line-img1{
+    width: 89vw!important;
+    height: 371px !important;
+    background: url(https://a0.muscache.com/4ea/air/v2/pictures/73e2817c-5c29-4a91-87e3-11f4578f202b.jpg?t=c:w3393-h1029,r:w3393-h1029-sfit,e:fjpg-c75) no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+}
+/* ３段目 */
+.line-img2{
+    width: 89vw!important;
+    height: 300px !important;
+    background: url(https://a0.muscache.com/4ea/air/v2/pictures/ea6285d9-5352-4447-b13d-b39bfc92dfe5.jpg?t=c:w3393-h1029,r:w3393-h1029-sfit,e:fjpg-c75) no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+    background-position: 0 -54px;
+}
+
+/* ４段目 */
+.famous{
+    width: 16.5vw;
+    text-align: center;
+    display: flex;
+    border: hidden;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.famous-pict{
+    width: 100%;
+    height: 100%;
+}
+.famous-sentence{
+    width: 16.5vw;
+    margin: 10px 20px 0px 0px;
+}
+/* コピーライトとか */
+.footer{
+    border-top: solid 1px rgb(221,221,221);
+}
+.footer-sentence{
+    width: 16.5vw;
+    margin: 10px 93px 0px 0px;
+}
+.footer-font{
+    margin-top: 16px;
+    color: rgb(34, 34, 34) !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+/* 一番下権利関係 */
+.right{
+    border-top: solid 1px rgb(221, 221, 221);
+    margin: 3vw 5.2vw;
+    display: inline-flex;
+    width: 89.6vw;
+}
+.custom-footer-ver{
+    color: #343434;
+}
+.footer-right{
+    width: 70vw;
+}
