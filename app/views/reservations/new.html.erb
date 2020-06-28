@@ -5,8 +5,7 @@
         <title>airbnb html copy</title>
         <link rel="icon" href="airbnb_logo.png">
         <meta name="description" content="practice-2">
-        <%# <link rel="stylesheet" href="index.css"> %>
-        <%= stylesheet_link_tag "index.css", :media => "all" %>
+        <%= stylesheet_link_tag "/index.css", :media => "all" %>
         <meta content="width=device-width, initial-scale=1" name="viewport">
     </head>
     
@@ -42,27 +41,25 @@
                 <div class="search-console">
                     <div class="search-console-menu">
                         <h1>ユニークな宿泊先や体験を予約しよう。</h1>
-                        <div class="menu-area menu-contens">
-                            <h4>エリア</h4>
-                            <input type="text" name="text" value="" size="20" placeholder="どこでも">
-                        </div>
-                        <div class="menu-when-pearent menu-contens">
-                            <span class="menu-when menu-contens">
-                                <h4>チェックイン</h4> 
-                                <input type="date" name="date" value="" size="20" placeholder="yyyy/mm/dd">
-                            </span>
-                            <span class="menu-when menu-contens">
-                                <h4>チェックアウト</h4>  
-                                <input type="date" name="date" value="" size="20" placeholder="yyyy/mm/dd">
-                            </span>
-                        </div>
-                        <!-- <div class="menu-voygers menu-contens">
-                            <h4>ゲスト</h4>  
-                            <input type="text" name="text" value="" size="20" placeholder="人数">
-                        </div> -->
-                        <div class="menu-search menu-contens">
-                            <input type="button" name="text" value="探す" size="20" class="menu-search-button">
-                        </div>
+                        <%= form_with(model: @reservation, local: true) do |f| %>
+                            <div class="menu-area menu-contens">
+                                <h4>エリア</h4>
+                                <%= f.collection_select :location_id, @location, :address, :address, {prompt: '選択してください'} %>
+                            </div>
+                            <div class="menu-when-pearent menu-contens">
+                                <span class="menu-when menu-contens">
+                                    <h4>チェックイン</h4>
+                                    <%= f.datetime_field :startDate %>
+                                </span>
+                                <span class="menu-when menu-contens">
+                                    <h4>チェックアウト</h4>
+                                    <%= f.datetime_field :endDate %>
+                                </span>
+                            </div>
+                            <div class="menu-search menu-contens">
+                                <%= f.submit "予約る", class: "menu-search-button" %>
+                            </div>
+                        <% end %>
                     </div>                   
                 </div>              
             </section>
