@@ -4,12 +4,12 @@ class ReservationsController < ApplicationController
     end
     
     def new
-        if user_signed_in?
+        # if user_signed_in?
             @reservation = Reservation.new
             @location = Location.select("address")
-        else
-            redirect_to new_user_registration_path
-        end
+        # else
+        #     redirect_to new_user_registration_path
+        # end
     end
     
     def create
